@@ -38,6 +38,7 @@ let addpraph =()=>{
         p=input.value;
         parph.textContent=p;
         del.style.display="block";
+
     }
 }
 let delpaph =()=>{
