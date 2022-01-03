@@ -17,6 +17,9 @@
         height: 40px;
     }
 }
+.none{
+    display: none;
+}
 
 h1 {
     text-align: center;
@@ -32,11 +35,6 @@ h1 {
         font-family: 'Pushster', cursive;
     }
 }
-@media (max-width:450px) {
-    .addtask  {
-        width: 100%;
-    }
-}
 input:focus{
     outline:none;
     border-color:#9ecaed;
@@ -45,7 +43,7 @@ input:focus{
     font-size: 18px;
     transition: 0.3s;
 }
-.div {
+.show {
     width: 50%;
     margin: auto;
     margin-top: 15px;
@@ -53,16 +51,15 @@ input:focus{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
-    display: none;
 }
 
 @media (max-width:450px) {
-    .div {
+    .show {
         width: 95%;
     }
 }
 
-.div h2 {
+.show h2 {
     color: white;
     text-align: center;
 }
@@ -77,21 +74,23 @@ input:focus{
     width: 50%;
     margin: auto;
     margin-top: 25px;
-    height: 200px;
+    height: auto;
     border: 3px solid lightslategrey;
     border-radius: 20px;
 
 }
 
 .div2{
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     background-color: rgb(103, 130, 165);
     width: 75%;
     height: 60px;
     margin: auto;
     border: 1px solid white;
     border-radius: 15px;
+    line-height: 3;
+    font-size: 20px ;
+    color: white;
 }
 @media (max-width:450px) {
     .div1{
@@ -113,7 +112,7 @@ input:focus{
 
 }
 @media (max-width:450px) {
-    .div2 p{
+    .div2 {
         font-size: 16px;
         margin-left: 20px;
         margin-top: 5px;
@@ -137,4 +136,29 @@ input:focus{
     height: 2px;
     margin: 20px auto;
     background: white;
+}
+.div3{
+    text-align: center;
+    background-color: rgb(103, 130, 165);
+    width: 800px;
+    height: 60px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    line-height: 3;
+    font-size: 20px ;
+    color: white;
+}
+@media (max-width:450px) {
+    .div3 {
+        width: 300px;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin: auto;
+    }
+}
+.remov{
+    text-decoration: line-through;
+    background-color: rgb(103, 130, 165,0.5);
 }
