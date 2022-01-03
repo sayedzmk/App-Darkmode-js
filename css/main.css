@@ -113,9 +113,11 @@ input:focus{
 }
 @media (max-width:450px) {
     .div2 {
+        width: 300px;
         font-size: 16px;
-        margin: auto;
+        margin-left: 20px;
         margin-top: 5px;
+        margin: auto;
 
     }
 }
